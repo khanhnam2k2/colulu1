@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  &-logo {
+    margin-left: 60px;
+  }
+  .menu {
+    background-image: url("../images/Intersect.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 121px;
+
+    &-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px 74px;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      color: $white;
+      font-weight: bold;
+      background: transparent;
+      border: none;
+
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+      span {
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
+  .sub-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #b2ce7c;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    padding: 20px;
+    z-index: 10001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active {
+      transform: translateX(0%);
+    }
+    ul li {
+      margin-bottom: 60px;
+      a {
+        font-size: 30px;
+        color: $white;
+        font-weight: 700;
+      }
+    }
+    &-close {
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-bottom: 2.086vw;
+    &-logo {
+      margin-left: 4vw;
+      width: 38vw;
+    }
+    .menu {
+      width: 55vw;
+      height: 15vw;
+
+      &-main {
+        margin: 3vw 10vw;
+      }
+      &-item {
+        gap: 1.282vw;
+
+        img {
+          width: 5.208vw;
+          height: 5.208vw;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+    .sub-menu {
+      padding: 5.128vw;
+
+      ul li {
+        margin-bottom: 7.823vw;
+        a {
+          font-size: 3.911vw;
+        }
+      }
+      &-close {
+        top: 5.208vw;
+        right: 5.208vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .menu {
+      &-item {
+        img {
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+    }
+    .sub-menu {
+      width: 100vw;
+
+      ul li {
+        margin-bottom: 15.385vw;
+        a {
+          font-size: 7.692vw;
+        }
+      }
+      &-close {
+        top: 6;
+        right: 6;
+      }
+    }
+  }
+}

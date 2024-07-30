@@ -1,0 +1,238 @@
+.footer {
+  max-width: 1560px;
+  padding: 0 20px;
+  margin: 200px auto 40px auto;
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  &-info {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  &-logo {
+    width: 400px;
+    height: 70px;
+    object-fit: contain;
+  }
+  &-social-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    img {
+      margin: 0 15px;
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+  }
+  &-desc {
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .quicklinks {
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 20px;
+    ul {
+      flex: 1 1 30%;
+      &:first-child li {
+        margin-bottom: 40px;
+      }
+      &:nth-child(2) li {
+        a {
+          position: relative;
+          font-size: 18px;
+          margin-left: 20px;
+          span {
+            font-size: 18px;
+          }
+          img {
+            position: absolute;
+            top: 5px;
+            left: -15px;
+            width: 10px;
+            height: 12px;
+          }
+        }
+        &:first-child {
+          a {
+            font-size: 24px;
+            margin-left: 0;
+          }
+        }
+      }
+      &:last-child li {
+        margin-bottom: 20px;
+        a {
+          font-size: 16px;
+        }
+      }
+      li {
+        margin-bottom: 25px;
+        a {
+          font-size: 24px;
+          font-weight: 700;
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  &-end {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-info {
+      align-items: center;
+    }
+
+    &-social-icon {
+      margin-left: 0;
+    }
+
+    .quicklinks {
+      margin-left: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 26.042vw auto 5.208vw auto;
+    padding: 0 2.604vw;
+    &-wrapper {
+      gap: 6.51vw;
+    }
+
+    &-logo {
+      width: 52.083vw;
+      height: 9.115vw;
+    }
+    &-social-icon {
+      margin-top: 7vw;
+      img {
+        margin: 0 1.953vw;
+        width: 4.167vw;
+        height: 4.167vw;
+      }
+    }
+    &-desc {
+      margin-left: 15px;
+      font-size: 1.56vw;
+    }
+    .quicklinks {
+      margin-left: 10vw;
+      gap: 5vw;
+      ul {
+        flex: 1 1 30vw;
+        &:first-child li {
+          margin-bottom: 4vw;
+        }
+        &:nth-child(2) li {
+          a {
+            font-size: 2.344vw;
+            margin-left: 2.604vw;
+            span {
+              font-size: 2.344vw;
+            }
+            img {
+              top: 0.5vw;
+              left: -1.5vw;
+              width: 1vw;
+              height: 1.2vw;
+            }
+          }
+          &:first-child {
+            a {
+              font-size: 3.125vw;
+              margin-left: 0;
+            }
+          }
+        }
+        &:last-child li {
+          margin-bottom: 3vw;
+          a {
+            font-size: 2.083vw;
+          }
+        }
+        li {
+          margin-bottom: 3.5vw;
+          a {
+            font-size: 3.125vw;
+            span {
+              font-size: 2.083vw;
+            }
+          }
+        }
+      }
+    }
+    &-end {
+      margin-top: 6vw;
+      font-size: 2.083vw;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    &-desc {
+      font-size: 2.5vw;
+    }
+    .quicklinks {
+      ul {
+        &:nth-child(2) li {
+          a {
+            font-size: 3vw;
+            span {
+              font-size: 3vw;
+            }
+            img {
+              top: 0.5vw;
+              left: -1.5vw;
+              width: 1vw;
+              height: 1.2vw;
+            }
+          }
+          &:first-child {
+            a {
+              font-size: 4vw;
+            }
+          }
+        }
+        &:last-child li {
+          a {
+            font-size: 3vw;
+          }
+        }
+        li {
+          a {
+            font-size: 4vw;
+            span {
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+    }
+    &-end {
+      font-size: 3vw;
+    }
+  }
+}

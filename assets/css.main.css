@@ -1,0 +1,79 @@
+/* general */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;600;700&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "TsukushiARoundGothic";
+  src: url("../../fonts/Tsukushi-A-Round-Gothic-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/bg.webp"), url("../images/bg_brand.webp");
+  background-position: top center, top center;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+header-logo {
+  margin-left: 60px;
+}
+
+/* pages */
+
+/*# sourceMappingURL=css.main.css.map */
