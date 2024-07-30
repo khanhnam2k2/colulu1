@@ -1,0 +1,157 @@
+/* general */
+@import "../general/reset";
+@import "../general/variables";
+@import "../general/global";
+@import "../general/header";
+@import "../general/footer";
+
+// Post Section
+.post {
+  .container-md {
+    margin-top: 34px;
+  }
+  &-content {
+    margin-top: 30px;
+    h3 {
+      text-align: center;
+      margin: 90px 0;
+      font-size: 36px;
+      font-weight: 500;
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+      &:nth-of-type(2) {
+        margin-top: 20px;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// Info Section
+.info {
+  .container-lg {
+    padding-top: 0;
+    padding-bottom: 200px;
+  }
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  &-details {
+    flex: 1 1 60%;
+  }
+  &-title {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  &-list {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &-image {
+    flex: 1 1 30%;
+  }
+}
+@media (max-width: 1024px) {
+  // Info Section
+  .info {
+    &-main {
+      flex-direction: column;
+      gap: 80px 0;
+    }
+    &-details {
+      width: 100%;
+    }
+    &-image {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // Post section
+  .post {
+    .container-md {
+      margin-top: 4.427vw;
+    }
+    &-content {
+      margin-top: 3.906vw;
+      h3 {
+        margin: 9vw 0;
+        font-size: 4.69vw;
+        &:first-of-type {
+          margin-bottom: 2.604vw;
+        }
+        &:nth-of-type(2) {
+          margin-top: 2.604vw;
+        }
+      }
+      p {
+        font-size: 2.6vw;
+        margin-bottom: 5.208vw;
+      }
+    }
+  }
+  // Info Section
+  .info {
+    .container-lg {
+      padding-bottom: 15vw;
+    }
+    &-main {
+      gap: 8vw;
+    }
+    &-title {
+      font-size: 4.69vw;
+    }
+    &-list {
+      margin-top: 9.115vw;
+      gap: 5.208vw;
+    }
+    &-item {
+      font-size: 2.604vw;
+    }
+    &-image {
+      width: 50vw;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // Post section
+  .post {
+    &-content {
+      h3 {
+        font-size: 6vw;
+      }
+      p {
+        font-size: 3.75vw;
+      }
+    }
+  }
+  .info {
+    &-title {
+      font-size: 7vw;
+    }
+    &-item {
+      font-size: 3.75vw;
+    }
+    &-image {
+      width: 60vw;
+    }
+  }
+}
