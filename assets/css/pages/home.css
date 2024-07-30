@@ -43,7 +43,7 @@ img {
 
 @font-face {
   font-family: "TsukushiARoundGothic";
-  src: url("../fonts/Tsukushi-A-Round-Gothic-Regular.ttf") format("truetype");
+  src: url("../../fonts/Tsukushi-A-Round-Gothic-Regular.ttf") format("truetype");
 }
 * {
   font-family: "Noto Sans JP", sans-serif;
@@ -59,7 +59,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-image: url("../images/bg2.png");
+  background-image: url("../../images/bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -172,7 +172,11 @@ a:hover {
     height: 18vw;
   }
   .button-view-more a {
-    font-size: 4.17vw;
+    font-size: 4vw;
+  }
+  .button-view-more img {
+    width: 4vw;
+    height: 3vw;
   }
 }
 .header {
@@ -185,7 +189,7 @@ a:hover {
   margin-left: 60px;
 }
 .header .menu {
-  background-image: url("../images/Intersect.png");
+  background-image: url("../../images/Intersect.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -518,7 +522,6 @@ a:hover {
     font-size: 3vw;
   }
 }
-/* pages */
 .slider .slick-slide {
   display: block;
   overflow: hidden;
@@ -787,7 +790,7 @@ a:hover {
   position: relative;
 }
 .group-main {
-  background-image: url("../images/bg.png");
+  background-image: url("../../images/bg.png");
   background-position: center;
   background-size: cover;
   border-radius: 100px 100px 0 0;
@@ -1394,4 +1397,4 @@ a:hover {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */

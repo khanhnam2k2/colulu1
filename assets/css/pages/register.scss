@@ -1,0 +1,362 @@
+/* general */
+@import "../general/reset";
+@import "../general/variables";
+@import "../general/global";
+@import "../general/header";
+@import "../general/footer";
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+  accent-color: $primary-color;
+}
+
+.register {
+  &-header {
+    text-align: center;
+  }
+  &-heading {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &-desc {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px 0;
+      label {
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+        .required {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          background-color: $primary-color;
+          padding: 2px 12px 3px 12px;
+          border-radius: 2px;
+          color: $white;
+        }
+        small {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+      input {
+        width: 100%;
+        border: 1px solid $primary-color;
+        border-radius: 40px;
+        padding: 20px 28px;
+        font-size: 24px;
+        font-weight: 300;
+        background: $white;
+        &[type="radio"] {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .input-md {
+        width: 60%;
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: transparent;
+          padding-right: 24px;
+          outline: none;
+          border: none;
+          img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+          }
+        }
+      }
+      .input-password {
+        position: relative;
+      }
+      .input-radio {
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+        padding: 23px 0;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0 5.5px;
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+      .date-select {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        .custom-select {
+          width: 100%;
+          position: relative;
+          select {
+            border: 1px solid $primary-color;
+            border-radius: 40px;
+            padding: 23px;
+            font-size: 24px;
+            font-weight: 300;
+            background-color: $white;
+            width: 100%;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            option {
+              font-size: 24px;
+            }
+          }
+          .custom-arrow {
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: $primary-color;
+            img {
+              height: 32px;
+              width: 32px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+    .add-more-info {
+      button {
+        display: block;
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 14px 20px;
+        background: $white;
+      }
+    }
+    .privacy-policy-group {
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+      input {
+        width: 24px;
+        height: 24px;
+        border: 2px solid $primary-color;
+      }
+      label {
+        font-size: 20px;
+        font-weight: 500;
+        .text-blue {
+          color: $blue;
+          margin-right: 12px;
+          text-decoration: underline;
+        }
+      }
+    }
+    .submit {
+      text-align: center;
+      margin-top: 160px;
+      button {
+        display: inline-block;
+        border-radius: 100px;
+        padding: 15px 132px;
+        background-color: $green;
+        color: $white;
+        font-size: 24px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .register {
+    &-heading {
+      font-size: 4.167vw;
+    }
+    &-desc {
+      margin-top: 2.604vw;
+      margin-bottom: 10.417vw;
+      font-size: 2.604vw;
+    }
+    &-form {
+      gap: 5.208vw 0;
+      .input-group {
+        gap: 2.083vw 0;
+        label {
+          font-size: 3.125vw;
+          gap: 0 2.083vw;
+          .required {
+            font-size: 2.083vw;
+            padding: 0.26vw 1.563vw 0.391vw 1.563vw;
+            border-radius: 0.26vw;
+          }
+          small {
+            font-size: 1.563vw;
+          }
+        }
+        input {
+          border-radius: 5.208vw;
+          padding: 2.604vw 3.646vw;
+          font-size: 3.125vw;
+          &[type="radio"] {
+            width: 3.125vw;
+            height: 3.125vw;
+          }
+        }
+        .input-md {
+          button {
+            padding-right: 3.125vw;
+            img {
+              width: 4.167vw;
+              height: 4.167vw;
+            }
+          }
+        }
+        .input-radio {
+          gap: 0 5.208vw;
+          padding: 2.995vw 0;
+          label {
+            gap: 0 0.716vw;
+            span {
+              font-size: 3.125vw;
+            }
+          }
+        }
+        .date-select {
+          gap: 0 2.604vw;
+          .custom-select {
+            select {
+              border-radius: 5.208vw;
+              padding: 2.995vw;
+              font-size: 3.125vw;
+              option {
+                font-size: 2vw;
+              }
+            }
+            .custom-arrow {
+              right: 3.125vw;
+              img {
+                height: 4.167vw;
+                width: 4.167vw;
+              }
+            }
+          }
+        }
+      }
+      .add-more-info {
+        button {
+          border-radius: 1.302vw;
+          padding: 1.823vw 2.604vw;
+          font-size: 2.083vw;
+        }
+      }
+      .privacy-policy-group {
+        gap: 0 0.651vw;
+        input {
+          width: 3.125vw;
+          height: 3.125vw;
+        }
+        label {
+          font-size: 2.604vw;
+          .text-blue {
+            margin-right: 1.563vw;
+          }
+        }
+      }
+      .submit {
+        margin-top: 20.833vw;
+        button {
+          border-radius: 13.021vw;
+          padding: 1.953vw 17.188vw;
+          font-size: 3.125vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .register {
+    &-heading {
+      font-size: 6.25vw;
+    }
+    &-desc {
+      font-size: 3.75vw;
+    }
+    &-form {
+      .input-group {
+        label {
+          font-size: 4.58vw;
+          .required {
+            font-size: 2.92vw;
+          }
+          small {
+            font-size: 2.5vw;
+          }
+        }
+        input {
+          border-radius: 5.208vw;
+          padding: 2.604vw 3.646vw;
+          font-size: 4.58vw;
+          &[type="radio"] {
+            width: 3.125vw;
+            height: 3.125vw;
+          }
+        }
+        .input-md {
+          width: 100%;
+        }
+        .input-radio {
+          label {
+            span {
+              font-size: 4vw;
+            }
+          }
+        }
+        .date-select {
+          .custom-select {
+            select {
+              font-size: 4vw;
+              option {
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+      }
+      .add-more-info {
+        button {
+          font-size: 4vw;
+        }
+      }
+      .privacy-policy-group {
+        label {
+          font-size: 3.75vw;
+        }
+      }
+      .submit {
+        button {
+          font-size: 4.58vw;
+        }
+      }
+    }
+  }
+}

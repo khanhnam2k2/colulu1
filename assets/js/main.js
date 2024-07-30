@@ -28,7 +28,7 @@ jQuery(function ($) {
   });
 
   // Register
-  $(".register__form").on("submit", function (e) {
+  $(".register-form").on("submit", function (e) {
     e.preventDefault();
 
     let formData = {
@@ -51,5 +51,6 @@ jQuery(function ($) {
       day__brith__child: $("#day__brith__child").val(),
       privacy__policy: $("#privacy__policy").is(":checked"),
     };
+    console.log(formData);
   });
 });
