@@ -240,6 +240,8 @@ body {
           justify-content: space-between;
           gap: 0 24px;
           margin-top: 40px;
+          text-align: center;
+          text-wrap: nowrap;
           .learn-more {
             flex: 1;
             font-size: 20px;
@@ -859,7 +861,7 @@ body {
         font-size: 6vw;
       }
       p {
-        font-size: 4vw;
+        font-size: 3.5vw;
       }
     }
     &-list {
