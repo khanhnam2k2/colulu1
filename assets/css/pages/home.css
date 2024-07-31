@@ -117,6 +117,23 @@ a:hover {
   background-color: #797271;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  font-size: 16px;
+}
+
+.breadcrumb img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
 .button-view-more {
   text-align: end;
 }
@@ -141,12 +158,23 @@ a:hover {
     padding: 0 6vw;
   }
   .container-lg {
-    padding: 0 6vw;
+    padding: 20.833vw 6vw;
   }
   .back-to-top {
     right: 4vw;
     width: 11vw;
     height: 11vw;
+  }
+  .breadcrumb {
+    gap: 0 2.083vw;
+  }
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 2.083vw;
+  }
+  .breadcrumb img {
+    width: 2.083vw;
+    height: 2.083vw;
   }
   .button-view-more a {
     font-size: 2.6vw;
@@ -164,12 +192,20 @@ a:hover {
     padding: 0 4vw;
   }
   .container-lg {
-    padding: 0 4vw;
+    padding: 25vw 4vw;
   }
   .back-to-top {
     right: 2vw;
     width: 18vw;
     height: 18vw;
+  }
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 3vw;
+  }
+  .breadcrumb img {
+    width: 3vw;
+    height: 3vw;
   }
   .button-view-more a {
     font-size: 4vw;
@@ -1235,6 +1271,7 @@ a:hover {
   }
   .group-main .contact-bottom-banner {
     height: 17.969vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .group-main .contact-bottom-banner h3 {
     font-size: 4.17vw;
@@ -1380,7 +1417,7 @@ a:hover {
     height: 17.969vw;
   }
   .group-main .contact-bottom-banner h3 {
-    font-size: 4.17vw;
+    font-size: 5vw;
   }
   .group-header {
     margin-bottom: 6.51vw;
@@ -1390,10 +1427,10 @@ a:hover {
     height: 7.813vw;
   }
   .group-header h2 {
-    font-size: 4.69vw;
+    font-size: 6vw;
   }
   .group-header h2 span {
-    font-size: 3.13vw;
+    font-size: 4vw;
   }
 }
 
