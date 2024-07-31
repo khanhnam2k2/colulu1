@@ -1,7 +1,15 @@
 .footer {
-  max-width: 1560px;
-  padding: 0 20px;
-  margin: 200px auto 40px auto;
+  background-image: url("../../images/footer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-main {
+    max-width: 1560px;
+    padding: 200px 20px 100px;
+    margin: 0 auto;
+  }
+
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +96,7 @@
     }
   }
   &-end {
-    margin-top: 60px;
+    padding-bottom: 28px;
     text-align: center;
     font-size: 16px;
   }
@@ -115,8 +123,10 @@
 
 @media (max-width: 768px) {
   .footer {
-    margin: 26.042vw auto 5.208vw auto;
-    padding: 0 2.604vw;
+    &-main {
+      padding: 26.042vw 2.604vw 13.021vw;
+      margin: 0 auto;
+    }
     &-wrapper {
       gap: 6.51vw;
     }
@@ -184,7 +194,7 @@
       }
     }
     &-end {
-      margin-top: 6vw;
+      padding-bottom: 3.646vw;
       font-size: 2.083vw;
     }
   }

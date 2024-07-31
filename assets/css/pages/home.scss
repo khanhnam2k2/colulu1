@@ -5,6 +5,14 @@
 @import "../general/header";
 @import "../general/footer";
 
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../../images/bg1.png"), url("../../images/bg.png");
+  background-size: contain, cover;
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+}
 // Slider Section
 .slider {
   .slick-slide {
