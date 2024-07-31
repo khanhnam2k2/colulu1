@@ -1,0 +1,12 @@
+/* general */
+@import "./general/variables";
+@import "./general/base";
+@import "./general/reset";
+@import "./general/header";
+@import "./general/footer";
+// @import "./general/part";
+
+/* pages */
+@import "./pages/home";
+@import "./pages/register";
+@import "./pages/profile";

@@ -2,18 +2,14 @@
 
 @font-face {
   font-family: "TsukushiARoundGothic";
-  src: url("../../fonts/Tsukushi-A-Round-Gothic-Regular.ttf") format("truetype");
+  src: url("../fonts/Tsukushi-A-Round-Gothic-Regular.ttf") format("truetype");
 }
 
 * {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.75;
   color: $primary-color;
-}
-
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
