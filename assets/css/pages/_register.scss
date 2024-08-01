@@ -3,10 +3,18 @@ input[type="radio"] {
   cursor: pointer;
   accent-color: $primary-color;
 }
-
 .register {
+  margin: 0 auto 125px;
+  padding: 0 20px;
+  max-width: 1240px;
+  &-main {
+    max-width: 898px;
+    padding: 0 20px;
+    margin: 44px auto;
+  }
   &-header {
     text-align: center;
+    margin-bottom: 73px;
   }
   &-heading {
     font-size: 32px;
@@ -15,13 +23,11 @@ input[type="radio"] {
   &-desc {
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 80px;
   }
   &-form {
     display: flex;
     flex-direction: column;
-    gap: 40px 0;
+    gap: 35px 0;
     .input-group {
       display: flex;
       flex-direction: column;
@@ -50,7 +56,7 @@ input[type="radio"] {
         width: 100%;
         border: 1px solid $primary-color;
         border-radius: 40px;
-        padding: 20px 28px;
+        padding: 17px 28px;
         font-size: 24px;
         font-weight: 300;
         background: $white;
@@ -60,7 +66,7 @@ input[type="radio"] {
         }
       }
       .input-md {
-        width: 60%;
+        width: 56%;
         button {
           position: absolute;
           top: 0;
@@ -70,6 +76,9 @@ input[type="radio"] {
           padding-right: 24px;
           outline: none;
           border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
             width: 32px;
             height: 32px;
@@ -83,8 +92,8 @@ input[type="radio"] {
       .input-radio {
         display: flex;
         align-items: center;
-        gap: 0 40px;
-        padding: 23px 0;
+        gap: 0 33px;
+        padding: 19px 0;
         label {
           display: flex;
           align-items: center;
@@ -104,7 +113,7 @@ input[type="radio"] {
           select {
             border: 1px solid $primary-color;
             border-radius: 40px;
-            padding: 23px;
+            padding: 17px 28px;
             font-size: 24px;
             font-weight: 300;
             background-color: $white;
@@ -125,6 +134,7 @@ input[type="radio"] {
             pointer-events: none;
             color: $primary-color;
             img {
+              display: block;
               height: 32px;
               width: 32px;
               object-fit: contain;
@@ -165,7 +175,7 @@ input[type="radio"] {
     }
     .submit {
       text-align: center;
-      margin-top: 160px;
+      margin-top: 122px;
       button {
         display: inline-block;
         border-radius: 100px;
@@ -181,16 +191,23 @@ input[type="radio"] {
 
 @media (max-width: 768px) {
   .register {
+    margin-bottom: 16.276vw;
+    padding: 0 3vw;
+    &-main {
+      padding: 0 2vw;
+      margin: 5.729vw auto;
+    }
+    &-header {
+      margin-bottom: 9vw;
+    }
     &-heading {
       font-size: 4.167vw;
     }
     &-desc {
-      margin-top: 2.604vw;
-      margin-bottom: 10.417vw;
       font-size: 2.604vw;
     }
     &-form {
-      gap: 5.208vw 0;
+      gap: 5vw 0;
       .input-group {
         gap: 2.083vw 0;
         label {
@@ -198,8 +215,7 @@ input[type="radio"] {
           gap: 0 2.083vw;
           .required {
             font-size: 2.083vw;
-            padding: 0.26vw 1.563vw 0.391vw 1.563vw;
-            border-radius: 0.26vw;
+            padding: 0.26vw 1.563vw 0.391vw;
           }
           small {
             font-size: 1.563vw;
@@ -207,7 +223,7 @@ input[type="radio"] {
         }
         input {
           border-radius: 5.208vw;
-          padding: 2.604vw 3.646vw;
+          padding: 2.214vw 3.646vw;
           font-size: 3.125vw;
           &[type="radio"] {
             width: 3.125vw;
@@ -215,6 +231,7 @@ input[type="radio"] {
           }
         }
         .input-md {
+          width: 80%;
           button {
             padding-right: 3.125vw;
             img {
@@ -224,8 +241,8 @@ input[type="radio"] {
           }
         }
         .input-radio {
-          gap: 0 5.208vw;
-          padding: 2.995vw 0;
+          gap: 0 4.297vw;
+          padding: 2.474vw 0;
           label {
             gap: 0 0.716vw;
             span {
@@ -238,10 +255,11 @@ input[type="radio"] {
           .custom-select {
             select {
               border-radius: 5.208vw;
-              padding: 2.995vw;
+              padding: 2.214vw 3.646vw;
               font-size: 3.125vw;
+              width: 100%;
               option {
-                font-size: 2vw;
+                font-size: 3.125vw;
               }
             }
             .custom-arrow {
@@ -257,8 +275,8 @@ input[type="radio"] {
       .add-more-info {
         button {
           border-radius: 1.302vw;
-          padding: 1.823vw 2.604vw;
           font-size: 2.083vw;
+          padding: 1.823vw 2.604vw;
         }
       }
       .privacy-policy-group {
@@ -275,7 +293,7 @@ input[type="radio"] {
         }
       }
       .submit {
-        margin-top: 20.833vw;
+        margin-top: 15vw;
         button {
           border-radius: 13.021vw;
           padding: 1.953vw 17.188vw;
@@ -289,47 +307,32 @@ input[type="radio"] {
 @media (max-width: 480px) {
   .register {
     &-heading {
-      font-size: 6.25vw;
+      font-size: 5vw;
     }
     &-desc {
-      font-size: 3.75vw;
+      font-size: 3vw;
     }
     &-form {
+      gap: 6vw 0;
       .input-group {
         label {
-          font-size: 4.58vw;
-          .required {
-            font-size: 2.92vw;
-          }
           small {
-            font-size: 2.5vw;
+            font-size: 2vw;
           }
         }
         input {
-          border-radius: 5.208vw;
-          padding: 2.604vw 3.646vw;
-          font-size: 4.58vw;
           &[type="radio"] {
-            width: 3.125vw;
-            height: 3.125vw;
-          }
-        }
-        .input-md {
-          width: 100%;
-        }
-        .input-radio {
-          label {
-            span {
-              font-size: 4vw;
-            }
+            width: 4vw;
+            height: 4vw;
           }
         }
         .date-select {
           .custom-select {
-            select {
-              font-size: 4vw;
-              option {
-                font-size: 2.5vw;
+            .custom-arrow {
+              right: 2vw;
+              img {
+                height: 5vw;
+                width: 5vw;
               }
             }
           }
@@ -337,17 +340,19 @@ input[type="radio"] {
       }
       .add-more-info {
         button {
-          font-size: 4vw;
+          font-size: 2.5vw;
         }
       }
       .privacy-policy-group {
-        label {
-          font-size: 3.75vw;
+        input {
+          width: 4vw;
+          height: 4vw;
         }
       }
       .submit {
+        margin-top: 10vw;
         button {
-          font-size: 4.58vw;
+          font-size: 3.5vw;
         }
       }
     }

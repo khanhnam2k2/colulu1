@@ -30,23 +30,6 @@ a:hover {
   cursor: pointer;
   opacity: 0.75;
 }
-.container-sm {
-  max-width: 900px;
-  padding: 0 20px;
-  margin: 44px auto 120px;
-}
-
-.container-md {
-  margin: 50px auto;
-  padding: 0 40px;
-  max-width: 1280px;
-}
-
-.container-lg {
-  margin: 0 auto;
-  padding: 160px 20px;
-  max-width: 1500px;
-}
 
 .back-to-top {
   position: fixed;
@@ -107,17 +90,6 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .container-sm {
-    padding: 0 6vw;
-  }
-
-  .container-md {
-    padding: 0 6vw;
-  }
-
-  .container-lg {
-    padding: 20.833vw 6vw;
-  }
   .back-to-top {
     right: 4vw;
     width: 11vw;
@@ -148,17 +120,6 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-  .container-sm {
-    padding: 0 4vw;
-  }
-
-  .container-md {
-    padding: 0 4vw;
-  }
-
-  .container-lg {
-    padding: 25vw 4vw;
-  }
   .back-to-top {
     right: 2vw;
     width: 15vw;

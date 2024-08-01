@@ -30,24 +30,6 @@ a:hover {
   opacity: 0.75;
 }
 
-.container-sm {
-  max-width: 900px;
-  padding: 0 20px;
-  margin: 44px auto 120px;
-}
-
-.container-md {
-  margin: 50px auto;
-  padding: 0 40px;
-  max-width: 1280px;
-}
-
-.container-lg {
-  margin: 0 auto;
-  padding: 160px 20px;
-  max-width: 1500px;
-}
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -107,15 +89,6 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .container-sm {
-    padding: 0 6vw;
-  }
-  .container-md {
-    padding: 0 6vw;
-  }
-  .container-lg {
-    padding: 20.833vw 6vw;
-  }
   .back-to-top {
     right: 4vw;
     width: 11vw;
@@ -141,15 +114,6 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .container-sm {
-    padding: 0 4vw;
-  }
-  .container-md {
-    padding: 0 4vw;
-  }
-  .container-lg {
-    padding: 25vw 4vw;
-  }
   .back-to-top {
     right: 2vw;
     width: 15vw;
@@ -1292,9 +1256,6 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .slider .container-md {
-    margin-top: 3.129vw;
-  }
   .slider-details {
     padding: 1.304vw 2.608vw;
     gap: 1vw;
@@ -1650,8 +1611,19 @@ input[type=radio] {
   accent-color: #797271;
 }
 
+.register {
+  margin: 0 auto 125px;
+  padding: 0 20px;
+  max-width: 1240px;
+}
+.register-main {
+  max-width: 898px;
+  padding: 0 20px;
+  margin: 44px auto;
+}
 .register-header {
   text-align: center;
+  margin-bottom: 73px;
 }
 .register-heading {
   font-size: 32px;
@@ -1660,13 +1632,11 @@ input[type=radio] {
 .register-desc {
   font-size: 20px;
   font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 80px;
 }
 .register-form {
   display: flex;
   flex-direction: column;
-  gap: 40px 0;
+  gap: 35px 0;
 }
 .register-form .input-group {
   display: flex;
@@ -1697,7 +1667,7 @@ input[type=radio] {
   width: 100%;
   border: 1px solid #797271;
   border-radius: 40px;
-  padding: 20px 28px;
+  padding: 17px 28px;
   font-size: 24px;
   font-weight: 300;
   background: #fff;
@@ -1707,7 +1677,7 @@ input[type=radio] {
   height: 24px;
 }
 .register-form .input-group .input-md {
-  width: 60%;
+  width: 56%;
 }
 .register-form .input-group .input-md button {
   position: absolute;
@@ -1718,6 +1688,9 @@ input[type=radio] {
   padding-right: 24px;
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .register-form .input-group .input-md button img {
   width: 32px;
@@ -1730,8 +1703,8 @@ input[type=radio] {
 .register-form .input-group .input-radio {
   display: flex;
   align-items: center;
-  gap: 0 40px;
-  padding: 23px 0;
+  gap: 0 33px;
+  padding: 19px 0;
 }
 .register-form .input-group .input-radio label {
   display: flex;
@@ -1753,7 +1726,7 @@ input[type=radio] {
 .register-form .input-group .date-select .custom-select select {
   border: 1px solid #797271;
   border-radius: 40px;
-  padding: 23px;
+  padding: 17px 28px;
   font-size: 24px;
   font-weight: 300;
   background-color: #fff;
@@ -1775,6 +1748,7 @@ input[type=radio] {
   color: #797271;
 }
 .register-form .input-group .date-select .custom-select .custom-arrow img {
+  display: block;
   height: 32px;
   width: 32px;
   object-fit: contain;
@@ -1809,7 +1783,7 @@ input[type=radio] {
 }
 .register-form .submit {
   text-align: center;
-  margin-top: 160px;
+  margin-top: 122px;
 }
 .register-form .submit button {
   display: inline-block;
@@ -1822,16 +1796,25 @@ input[type=radio] {
 }
 
 @media (max-width: 768px) {
+  .register {
+    margin-bottom: 16.276vw;
+    padding: 0 3vw;
+  }
+  .register-main {
+    padding: 0 2vw;
+    margin: 5.729vw auto;
+  }
+  .register-header {
+    margin-bottom: 9vw;
+  }
   .register-heading {
     font-size: 4.167vw;
   }
   .register-desc {
-    margin-top: 2.604vw;
-    margin-bottom: 10.417vw;
     font-size: 2.604vw;
   }
   .register-form {
-    gap: 5.208vw 0;
+    gap: 5vw 0;
   }
   .register-form .input-group {
     gap: 2.083vw 0;
@@ -1842,20 +1825,22 @@ input[type=radio] {
   }
   .register-form .input-group label .required {
     font-size: 2.083vw;
-    padding: 0.26vw 1.563vw 0.391vw 1.563vw;
-    border-radius: 0.26vw;
+    padding: 0.26vw 1.563vw 0.391vw;
   }
   .register-form .input-group label small {
     font-size: 1.563vw;
   }
   .register-form .input-group input {
     border-radius: 5.208vw;
-    padding: 2.604vw 3.646vw;
+    padding: 2.214vw 3.646vw;
     font-size: 3.125vw;
   }
   .register-form .input-group input[type=radio] {
     width: 3.125vw;
     height: 3.125vw;
+  }
+  .register-form .input-group .input-md {
+    width: 80%;
   }
   .register-form .input-group .input-md button {
     padding-right: 3.125vw;
@@ -1865,8 +1850,8 @@ input[type=radio] {
     height: 4.167vw;
   }
   .register-form .input-group .input-radio {
-    gap: 0 5.208vw;
-    padding: 2.995vw 0;
+    gap: 0 4.297vw;
+    padding: 2.474vw 0;
   }
   .register-form .input-group .input-radio label {
     gap: 0 0.716vw;
@@ -1879,11 +1864,12 @@ input[type=radio] {
   }
   .register-form .input-group .date-select .custom-select select {
     border-radius: 5.208vw;
-    padding: 2.995vw;
+    padding: 2.214vw 3.646vw;
     font-size: 3.125vw;
+    width: 100%;
   }
   .register-form .input-group .date-select .custom-select select option {
-    font-size: 2vw;
+    font-size: 3.125vw;
   }
   .register-form .input-group .date-select .custom-select .custom-arrow {
     right: 3.125vw;
@@ -1894,8 +1880,8 @@ input[type=radio] {
   }
   .register-form .add-more-info button {
     border-radius: 1.302vw;
-    padding: 1.823vw 2.604vw;
     font-size: 2.083vw;
+    padding: 1.823vw 2.604vw;
   }
   .register-form .privacy-policy-group {
     gap: 0 0.651vw;
@@ -1911,7 +1897,7 @@ input[type=radio] {
     margin-right: 1.563vw;
   }
   .register-form .submit {
-    margin-top: 20.833vw;
+    margin-top: 15vw;
   }
   .register-form .submit button {
     border-radius: 13.021vw;
@@ -1921,49 +1907,40 @@ input[type=radio] {
 }
 @media (max-width: 480px) {
   .register-heading {
-    font-size: 6.25vw;
+    font-size: 5vw;
   }
   .register-desc {
-    font-size: 3.75vw;
+    font-size: 3vw;
   }
-  .register-form .input-group label {
-    font-size: 4.58vw;
-  }
-  .register-form .input-group label .required {
-    font-size: 2.92vw;
+  .register-form {
+    gap: 6vw 0;
   }
   .register-form .input-group label small {
-    font-size: 2.5vw;
-  }
-  .register-form .input-group input {
-    border-radius: 5.208vw;
-    padding: 2.604vw 3.646vw;
-    font-size: 4.58vw;
+    font-size: 2vw;
   }
   .register-form .input-group input[type=radio] {
-    width: 3.125vw;
-    height: 3.125vw;
+    width: 4vw;
+    height: 4vw;
   }
-  .register-form .input-group .input-md {
-    width: 100%;
+  .register-form .input-group .date-select .custom-select .custom-arrow {
+    right: 2vw;
   }
-  .register-form .input-group .input-radio label span {
-    font-size: 4vw;
-  }
-  .register-form .input-group .date-select .custom-select select {
-    font-size: 4vw;
-  }
-  .register-form .input-group .date-select .custom-select select option {
-    font-size: 2.5vw;
+  .register-form .input-group .date-select .custom-select .custom-arrow img {
+    height: 5vw;
+    width: 5vw;
   }
   .register-form .add-more-info button {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
-  .register-form .privacy-policy-group label {
-    font-size: 3.75vw;
+  .register-form .privacy-policy-group input {
+    width: 4vw;
+    height: 4vw;
+  }
+  .register-form .submit {
+    margin-top: 10vw;
   }
   .register-form .submit button {
-    font-size: 4.58vw;
+    font-size: 3.5vw;
   }
 }
 body {
