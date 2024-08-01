@@ -96,8 +96,9 @@ a:hover {
     align-items: center;
     gap: 0 8px;
     font-family: $font-TsukushiARoundGothic;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
+    padding-right: 20px;
   }
   img {
     width: 26px;
@@ -137,7 +138,7 @@ a:hover {
   }
   .button-view-more {
     a {
-      font-size: 2.6vw;
+      font-size: 3.125vw;
     }
     img {
       width: 3.385vw;
@@ -171,14 +172,5 @@ a:hover {
   .breadcrumb img {
     width: 3vw;
     height: 3vw;
-  }
-  .button-view-more {
-    a {
-      font-size: 4vw;
-    }
-    img {
-      width: 4vw;
-      height: 3vw;
-    }
   }
 }

@@ -30,16 +30,22 @@ body {
     display: flex !important;
     align-items: center;
   }
-  .container-md {
-    margin-top: 24px;
-  }
-  &-desc {
+
+  &-details {
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
     align-items: center;
-    gap: 0 5.5px;
+    justify-content: center;
+    gap: 0 30px;
     background-color: $white;
     border-radius: 40px;
-    padding: 18px 52px 18px 81px;
+    padding: 18px 0;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+    }
     img {
       width: 20px;
       height: 17px;
@@ -48,6 +54,10 @@ body {
     p {
       font-size: 16px;
       font-weight: 700;
+      margin: 0;
+      br {
+        display: none;
+      }
     }
   }
 }
@@ -55,7 +65,7 @@ body {
 // About Section
 .about {
   margin-top: 135px;
-  margin-bottom: 230px;
+  margin-bottom: 217px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 198px;
@@ -90,7 +100,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 16px 0;
-    margin-bottom: 40px;
     img {
       width: 56px;
       height: 56px;
@@ -100,11 +109,12 @@ body {
       font-family: $font-TsukushiARoundGothic;
       font-size: 48px;
       font-weight: 700;
+      margin-bottom: 21px;
     }
   }
   &-desc {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     p {
       font-family: $font-TsukushiARoundGothic;
       font-size: 22px;
@@ -125,24 +135,34 @@ body {
 
 // Product Section
 .product {
-  margin-bottom: 170px;
+  margin-bottom: 176px;
   .baby-stroller {
     margin-bottom: 232px;
     .product-main {
-      margin-top: 87px;
+      margin-top: 68px;
     }
   }
   .lifestyle {
-    margin-bottom: 244px;
+    margin-bottom: 230px;
   }
   .dryer {
-    margin-bottom: 170px;
+    margin-bottom: 156px;
+    .product-item {
+      .item-content {
+        margin-top: 30px;
+      }
+    }
+    .button-view-more {
+      a {
+        font-size: 20px;
+      }
+    }
   }
   &-main {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 125px;
+    margin-top: 111px;
   }
   &-header {
     text-align: center;
@@ -161,7 +181,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 80px;
-    margin-bottom: 74px;
+    margin-bottom: 71px;
     .product-item {
       display: flex;
       flex-direction: column;
@@ -171,6 +191,7 @@ body {
         height: 320px;
       }
       .item-content {
+        margin-top: 12px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -190,9 +211,8 @@ body {
           font-family: $font-roboto;
           font-size: 24px;
           font-weight: 500;
-          min-height: 56px;
-          height: 100%;
           margin-top: 8px;
+          line-height: 30px;
           span {
             font-family: $font-noto-sans-jp;
             font-size: 16px;
@@ -200,7 +220,13 @@ body {
         }
         .desc {
           font-size: 16px;
+          margin-top: 18px;
           margin-bottom: 8px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .rating {
           display: flex;
@@ -258,9 +284,13 @@ body {
       .item-content {
         .name {
           font-size: 32px;
+          line-height: 50px;
           span {
             font-size: 14px;
           }
+        }
+        .desc {
+          margin-top: 0;
         }
       }
     }
@@ -275,6 +305,7 @@ body {
       font-family: $font-TsukushiARoundGothic;
       font-size: 36px;
       font-weight: 700;
+      margin-bottom: 0;
     }
     img {
       width: 200px;
@@ -292,7 +323,7 @@ body {
     background-size: cover;
     border-radius: 100px 100px 0 0;
     z-index: 1;
-    margin-top: -292px;
+    margin-top: -300px;
     position: relative;
     .group-container {
       max-width: 1080px;
@@ -302,7 +333,7 @@ body {
 
     // Blog section
     .blog {
-      margin-bottom: 200px;
+      margin-bottom: 205px;
       &-list {
         margin-top: 35px;
         display: grid;
@@ -313,35 +344,54 @@ body {
         display: flex;
         flex-direction: column;
       }
+      &-img {
+        img {
+          display: block;
+        }
+      }
 
       &-seasonal {
-        margin-top: 32px;
-        margin-bottom: 12px;
+        margin-top: 26px;
         display: flex;
         align-items: center;
         gap: 0 16px;
         a {
           background-color: $pink;
           color: $white;
-          padding: 6px 20px;
+          padding: 4px 12px;
           border-radius: 25px;
           font-size: 14px;
+          text-align: center;
+          text-wrap: nowrap;
         }
       }
       &-desc {
         font-size: 20px;
+        margin-top: 10px;
+        line-height: 1.448;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
     // News section
     .news {
-      margin-bottom: 240px;
+      margin-bottom: 212px;
+      .group-header {
+        margin-bottom: 21px;
+      }
+      &-list {
+        margin-top: 35px;
+      }
 
       &-item {
         display: flex;
         flex-direction: column;
-        gap: 12px 0;
-        padding: 33px 56px;
+        gap: 5px 0;
+        padding: 25px 56px;
         border-bottom: 1px solid $primary-color;
         .created-at {
           font-family: $font-roboto;
@@ -350,6 +400,10 @@ body {
         .title {
           font-size: 24px;
           font-weight: 500;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 800px;
         }
       }
     }
@@ -367,7 +421,7 @@ body {
         justify-content: center;
         flex-direction: column;
         gap: 16px 0;
-        margin-bottom: 32px;
+        margin-bottom: 10px;
         img {
           width: 120px;
           height: 120px;
@@ -386,28 +440,24 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 32px 116px;
+        padding: 18px 116px;
         &-item {
           display: flex;
           flex-direction: column;
-          gap: 12px 0;
           align-items: center;
           h3 {
             font-family: $font-roboto;
             font-size: 32px;
             font-weight: 500;
+            margin-bottom: 17px;
             span {
               font-size: 24px;
             }
           }
-          img {
-            width: 124px;
-            height: 40px;
-          }
         }
       }
       &-bottom {
-        margin-top: 80px;
+        margin-top: 55px;
         display: flex;
         flex-direction: column;
         gap: 32px 0;
@@ -422,6 +472,7 @@ body {
             font-size: 32px;
             font-weight: 700;
             color: $black;
+            margin-bottom: 0;
           }
         }
       }
@@ -432,7 +483,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
     img {
       width: 60px;
       height: 60px;
@@ -457,6 +508,12 @@ body {
   }
 }
 @media (max-width: 1280px) {
+  .slider {
+    &-details {
+      flex-direction: column;
+      gap: 10px 0;
+    }
+  }
   .about {
     &-img {
       max-width: 280px;
@@ -514,21 +571,23 @@ body {
     .container-md {
       margin-top: 3.129vw;
     }
-    &-desc {
+    &-details {
       padding: 1.304vw 2.608vw;
+      gap: 1vw;
+
       img {
         width: 2.608vw;
         height: 2.216vw;
       }
       p {
-        font-size: 2.86vw;
+        font-size: 2vw;
       }
     }
   }
   // About Section
   .about {
     margin-top: 17.601vw;
-    margin-bottom: 29.948vw;
+    margin-bottom: 26vw;
     padding-bottom: 20vw;
     &-img {
       max-width: 19.557vw;
@@ -552,19 +611,20 @@ body {
     }
     &-heading {
       gap: 2.086vw 0;
-      margin-bottom: 5.215vw;
       img {
         width: 7.301vw;
         height: 7.301vw;
       }
       h3 {
-        font-size: 6.25vw;
+        font-size: 6vw;
+        margin-bottom: 2.734vw;
       }
     }
     &-desc {
       margin-bottom: 13.038vw;
       p {
         font-size: 2.868vw;
+
         &:first-of-type {
           margin-bottom: 5.215vw;
         }
@@ -591,6 +651,11 @@ body {
     }
     .dryer {
       margin-bottom: 22vw;
+      .button-view-more {
+        a {
+          font-size: 3.125vw;
+        }
+      }
     }
     &-main {
       padding: 0 4vw;
@@ -599,7 +664,7 @@ body {
     &-header {
       margin-bottom: 9vw;
       h2 {
-        font-size: 6.25vw;
+        font-size: 6vw;
         margin-bottom: 2.083vw;
       }
       p {
@@ -620,21 +685,26 @@ body {
         .item-image {
           width: 41.667vw;
           height: 41.667vw;
+          img {
+            display: block;
+          }
         }
         .item-content {
+          margin-top: 1.563vw;
           width: 100%;
           .status {
             font-size: 1.56vw;
+            padding: 0.26vw 2.604vw;
           }
           .name {
             font-size: 3.13vw;
-            min-height: 7.292vw;
             span {
               font-size: 2.08vw;
             }
           }
           .desc {
             font-size: 2.08vw;
+            margin: 1.042vw 0;
           }
           .rating {
             img {
@@ -711,8 +781,7 @@ body {
           padding: 4vw 3vw;
         }
         &-img {
-          width: 62.5vw;
-          height: 32.552vw;
+          padding: 0 4vw;
         }
         &-seasonal {
           margin-top: 4.167vw;
@@ -733,7 +802,12 @@ body {
       // News section
       .news {
         margin-bottom: 26.042vw;
-
+        .group-header {
+          margin-bottom: 2.734vw;
+        }
+        &-list {
+          margin-top: 4.557vw;
+        }
         &-item {
           gap: 1.563vw 0;
           padding: 4.297vw 7.292vw;
@@ -771,13 +845,14 @@ body {
             gap: 1.563vw 0;
             h3 {
               font-size: 4.17vw;
+              margin-bottom: 2.2vw;
               span {
                 font-size: 3.13vw;
               }
             }
             img {
-              width: 16.146vw;
-              height: 5.208vw;
+              width: 17.146vw;
+              height: 6.208vw;
             }
           }
         }
@@ -795,7 +870,7 @@ body {
       }
     }
     &-header {
-      margin-bottom: 6.51vw;
+      margin-bottom: 1.823vw;
       img {
         width: 7.813vw;
         height: 7.813vw;
@@ -812,15 +887,9 @@ body {
 
 @media (max-width: 480px) {
   .slider {
-    &-desc {
-      padding: 3vw 4vw;
-
-      img {
-        width: 3vw;
-        height: 3vw;
-      }
+    &-details {
       p {
-        font-size: 3vw;
+        font-size: 2.5vw;
       }
     }
   }
@@ -829,40 +898,23 @@ body {
     &-heading {
       gap: 2.086vw 0;
       margin-bottom: 5.215vw;
-      img {
-        width: 7.301vw;
-        height: 7.301vw;
-      }
-      h3 {
-        font-size: 6vw;
-      }
     }
     &-desc {
       margin-bottom: 13.038vw;
       p {
-        font-size: 4vw;
-        &:first-of-type {
-          margin-bottom: 5.215vw;
-        }
+        font-size: 3vw;
       }
     }
   }
 
   // Product Section
   .product {
-    &-header {
-      h2 {
-        font-size: 6vw;
-      }
-      p {
-        font-size: 3.5vw;
-      }
-    }
     &-list {
       .product-item {
         .item-content {
           .status {
-            font-size: 2.5vw;
+            font-size: 2vw;
+            padding: 1vw 3vw;
           }
           .name {
             font-size: 5vw;
@@ -894,8 +946,7 @@ body {
             gap: 0 3.125vw;
             margin-top: 5.208vw;
             .learn-more {
-              font-size: 4.17vw;
-              padding: 2vw;
+              font-size: 3.5vw;
             }
             .add-cart {
               width: 11vw;
@@ -904,25 +955,13 @@ body {
           }
         }
       }
-      .product-item-pro {
-        .item-content {
-          .name {
-            font-size: 4.17vw;
-            span {
-              font-size: 1.82vw;
-            }
-          }
-        }
-      }
     }
     .view-more-product {
       gap: 32px 0;
-      h3 {
-        font-size: 6vw;
-      }
+
       img {
-        width: 26.042vw;
-        height: 13.542vw;
+        width: 30vw;
+        height: 15vw;
       }
     }
   }
@@ -943,64 +982,10 @@ body {
         }
       }
 
-      // News section
-      .news {
-        &-item {
-          .created-at {
-            font-size: 3vw;
-          }
-          .title {
-            font-size: 4vw;
-          }
-        }
-      }
-
       // Contact section
       .contact {
-        &-offical {
-          h2 {
-            font-size: 6vw;
-            span {
-              font-size: 4vw;
-            }
-          }
-        }
-        &-social {
-          &-item {
-            h3 {
-              font-size: 5vw;
-              span {
-                font-size: 4vw;
-              }
-            }
-            img {
-              width: 16.146vw;
-              height: 5.208vw;
-            }
-          }
-        }
         &-bottom {
-          margin-top: 10.417vw;
-          gap: 4.167vw 0;
-          &-banner {
-            height: 17.969vw;
-            h3 {
-              font-size: 5vw;
-            }
-          }
-        }
-      }
-    }
-    &-header {
-      margin-bottom: 6.51vw;
-      img {
-        width: 7.813vw;
-        height: 7.813vw;
-      }
-      h2 {
-        font-size: 6vw;
-        span {
-          font-size: 4vw;
+          margin-top: 6vw;
         }
       }
     }
