@@ -731,7 +731,7 @@ main {
   }
 }
 /* pages */
-body {
+.home-body {
   padding: 0;
   margin: 0;
   background-image: url("../images/bg1.png"), url("../images/bg.png");
@@ -1259,6 +1259,7 @@ body {
   .slider-details {
     padding: 1.304vw 2.608vw;
     gap: 1vw;
+    margin: 2.604vw;
   }
   .slider-details img {
     width: 2.608vw;
