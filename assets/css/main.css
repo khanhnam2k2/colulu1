@@ -1451,7 +1451,7 @@ main {
     gap: 0 2.083vw;
   }
   .group-main .blog-seasonal a {
-    padding: 0.781vw 1.302vw;
+    padding: 1vw 3vw;
     border-radius: 3.255vw;
     font-size: 1.82vw;
   }
@@ -1596,11 +1596,16 @@ main {
     height: 15vw;
   }
   .group-main .blog-seasonal a {
-    padding: 1vw 3vw;
-    font-size: 2.92vw;
+    font-size: 3vw;
   }
   .group-main .blog-desc {
+    font-size: 3.2vw;
+  }
+  .group-main .news-item .created-at {
     font-size: 3vw;
+  }
+  .group-main .news-item .title {
+    font-size: 3.5vw;
   }
   .group-main .contact-bottom {
     margin-top: 6vw;

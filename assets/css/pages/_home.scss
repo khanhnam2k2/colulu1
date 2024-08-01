@@ -788,7 +788,7 @@
           margin-bottom: 1.563vw;
           gap: 0 2.083vw;
           a {
-            padding: 0.781vw 1.302vw;
+            padding: 1vw 3vw;
             border-radius: 3.255vw;
             font-size: 1.82vw;
           }
@@ -973,12 +973,19 @@
       .blog {
         &-seasonal {
           a {
-            padding: 1vw 3vw;
-            font-size: 2.92vw;
+            font-size: 3vw;
           }
         }
         &-desc {
+          font-size: 3.2vw;
+        }
+      }
+      .news-item {
+        .created-at {
           font-size: 3vw;
+        }
+        .title {
+          font-size: 3.5vw;
         }
       }
 
