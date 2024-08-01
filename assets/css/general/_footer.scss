@@ -109,9 +109,6 @@
     &-info {
       max-width: 350px;
     }
-    .quicklinks {
-      // gap: 40px;
-    }
   }
 }
 @media (max-width: 1024px) {
@@ -217,12 +214,11 @@
         &:nth-child(2) li {
           a {
             font-size: 3vw;
-
             img {
-              top: 0.5vw;
-              left: -1.5vw;
-              width: 1vw;
-              height: 1.2vw;
+              top: 0;
+              left: -2.5vw;
+              width: 2vw;
+              height: 2.2vw;
             }
           }
         }

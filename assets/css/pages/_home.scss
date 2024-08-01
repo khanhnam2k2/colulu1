@@ -189,6 +189,9 @@ body {
       .item-image {
         width: 320px;
         height: 320px;
+        a {
+          display: inline-block;
+        }
       }
       .item-content {
         margin-top: 12px;
@@ -225,6 +228,7 @@ body {
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
+          line-clamp: 2;
           overflow: hidden;
           text-overflow: ellipsis;
         }
@@ -345,8 +349,8 @@ body {
         flex-direction: column;
       }
       &-img {
-        img {
-          display: block;
+        a {
+          display: inline-block;
         }
       }
 
@@ -372,6 +376,7 @@ body {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+        line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
       }
@@ -685,9 +690,6 @@ body {
         .item-image {
           width: 41.667vw;
           height: 41.667vw;
-          img {
-            display: block;
-          }
         }
         .item-content {
           margin-top: 1.563vw;
