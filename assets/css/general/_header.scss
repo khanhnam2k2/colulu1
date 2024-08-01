@@ -17,7 +17,7 @@
     &-main {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 0 56px;
       margin: 15px 74px;
     }
     &-item {
@@ -29,6 +29,8 @@
       font-weight: bold;
       background: transparent;
       border: none;
+      text-align: center;
+      text-wrap: nowrap;
 
       img {
         width: 32px;
@@ -77,6 +79,10 @@
 }
 
 @media (max-width: 991px) {
+  .header .menu {
+    width: 400px;
+    height: 110px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -92,6 +98,8 @@
 
       &-main {
         margin: 3vw 10vw;
+        justify-content: space-between;
+        gap: 0;
       }
       &-item {
         gap: 1.282vw;
@@ -136,14 +144,10 @@
       width: 100vw;
 
       ul li {
-        margin-bottom: 15.385vw;
+        margin-bottom: 12vw;
         a {
-          font-size: 7.692vw;
+          font-size: 6vw;
         }
-      }
-      &-close {
-        top: 6;
-        right: 6;
       }
     }
   }

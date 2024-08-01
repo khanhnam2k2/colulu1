@@ -152,8 +152,8 @@ a:hover {
   }
   .back-to-top {
     right: 2vw;
-    width: 18vw;
-    height: 18vw;
+    width: 15vw;
+    height: 15vw;
   }
   .breadcrumb a,
   .breadcrumb span {
@@ -439,7 +439,7 @@ main {
 .header .menu-main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0 56px;
   margin: 15px 74px;
 }
 .header .menu-item {
@@ -451,6 +451,8 @@ main {
   font-weight: bold;
   background: transparent;
   border: none;
+  text-align: center;
+  text-wrap: nowrap;
 }
 .header .menu-item img {
   width: 32px;
@@ -495,6 +497,12 @@ main {
   right: 25px;
 }
 
+@media (max-width: 991px) {
+  .header .menu {
+    width: 400px;
+    height: 110px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     padding-bottom: 2.086vw;
@@ -509,6 +517,8 @@ main {
   }
   .header .menu-main {
     margin: 3vw 10vw;
+    justify-content: space-between;
+    gap: 0;
   }
   .header .menu-item {
     gap: 1.282vw;
@@ -543,14 +553,10 @@ main {
     width: 100vw;
   }
   .header .sub-menu ul li {
-    margin-bottom: 15.385vw;
+    margin-bottom: 12vw;
   }
   .header .sub-menu ul li a {
-    font-size: 7.692vw;
-  }
-  .header .sub-menu-close {
-    top: 6;
-    right: 6;
+    font-size: 6vw;
   }
 }
 .footer {
