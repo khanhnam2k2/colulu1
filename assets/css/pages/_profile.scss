@@ -19,19 +19,19 @@ body {
       line-height: 2;
       margin-bottom: 30px;
       &:first-of-type {
-        margin-bottom: 80px;
+        margin-bottom: 75px;
       }
     }
     p {
       font-size: 20px;
       font-weight: 400;
-      margin-bottom: 120px;
+      margin-bottom: 105px;
       line-height: 1.75;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.32px;
     }
   }
   &-image {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 }
 
@@ -43,7 +43,7 @@ body {
 
 // Info Section
 .info {
-  margin: 127px auto 247px;
+  margin: 102px auto 247px;
   padding: 0 20px;
   max-width: 1410px;
   &-main {

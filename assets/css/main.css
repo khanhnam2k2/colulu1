@@ -14,7 +14,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url("../../images/bg.png");
+  background-image: url("../images/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1973,17 +1973,17 @@ body {
   margin-bottom: 30px;
 }
 .post-content h3:first-of-type {
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 .post-content p {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 120px;
+  margin-bottom: 105px;
   line-height: 1.75;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.32px;
 }
 .post-image {
-  margin-bottom: 75px;
+  margin-bottom: 73px;
 }
 
 .line-wrapper {
@@ -1993,7 +1993,7 @@ body {
 }
 
 .info {
-  margin: 127px auto 247px;
+  margin: 102px auto 247px;
   padding: 0 20px;
   max-width: 1410px;
 }
