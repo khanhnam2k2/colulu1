@@ -1788,11 +1788,11 @@ input[type=radio] {
   margin-right: 12px;
   text-decoration: underline;
 }
-.register-form .submit {
+.register-submit {
   text-align: center;
   margin-top: 122px;
 }
-.register-form .submit button {
+.register-submit button {
   display: inline-block;
   border-radius: 100px;
   padding: 15px 132px;
@@ -1903,10 +1903,10 @@ input[type=radio] {
   .register-form .privacy-policy-group label .text-blue {
     margin-right: 1.563vw;
   }
-  .register-form .submit {
+  .register-submit {
     margin-top: 15vw;
   }
-  .register-form .submit button {
+  .register-submit button {
     border-radius: 13.021vw;
     padding: 1.953vw 17.188vw;
     font-size: 3.125vw;
@@ -1943,10 +1943,10 @@ input[type=radio] {
     width: 4vw;
     height: 4vw;
   }
-  .register-form .submit {
+  .register-submit {
     margin-top: 10vw;
   }
-  .register-form .submit button {
+  .register-submit button {
     font-size: 3.5vw;
   }
 }
