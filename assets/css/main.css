@@ -14,10 +14,8 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url("../images/bg.png");
+  background: url("../images/bg.png") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 button:hover {
@@ -1950,149 +1948,140 @@ input[type=radio] {
     font-size: 3.5vw;
   }
 }
-body {
-  background-image: url("../images/bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.post {
+.profile-post {
   margin: 33px auto;
   padding: 0 20px;
   max-width: 1240px;
 }
-.post-content {
+.profile-post-content {
   margin-top: 33px;
 }
-.post-content h3 {
+.profile-post-content h3 {
   text-align: center;
   font-size: 36px;
   font-weight: 500;
   line-height: 2;
   margin-bottom: 30px;
 }
-.post-content h3:first-of-type {
+.profile-post-content h3:first-of-type {
   margin-bottom: 75px;
 }
-.post-content p {
+.profile-post-content p {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 105px;
   line-height: 1.75;
   letter-spacing: 0.32px;
 }
-.post-image {
+.profile-post-image {
   margin-bottom: 73px;
 }
-
-.line-wrapper {
+.profile-line-wrapper {
   margin: 0 auto;
   padding: 28px 20px;
   max-width: 1500px;
 }
-
-.info {
+.profile-info {
   margin: 102px auto 247px;
   padding: 0 20px;
   max-width: 1410px;
 }
-.info-main {
+.profile-info-main {
   display: flex;
   align-items: center;
   gap: 0 185px;
 }
-.info-details {
+.profile-info-details {
   max-width: 635px;
   width: 100%;
 }
-.info-title {
+.profile-info-title {
   font-size: 36px;
   font-weight: 500;
 }
-.info-list {
+.profile-info-list {
   margin-top: 62px;
   display: flex;
   flex-direction: column;
   gap: 40px 0;
 }
-.info-item {
+.profile-info-item {
   display: grid;
   grid-template-columns: 1fr 2fr;
   font-size: 20px;
   font-weight: 500;
 }
-.info-item p {
+.profile-info-item p {
   margin: 0;
 }
 
 @media (max-width: 1024px) {
-  .info-main {
+  .profile-info-main {
     flex-direction: column;
     gap: 60px 0;
   }
-  .info-details {
+  .profile-info-details {
     max-width: 100%;
   }
-  .info-image {
+  .profile-info-image {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .post {
+  .profile-post {
     margin: 4.297vw auto;
     padding: 0 3vw;
   }
-  .post-content {
+  .profile-post-content {
     margin-top: 4.297vw;
   }
-  .post-content h3 {
+  .profile-post-content h3 {
     font-size: 4.688vw;
     margin-bottom: 3.906vw;
   }
-  .post-content h3:first-of-type {
+  .profile-post-content h3:first-of-type {
     margin-bottom: 7vw;
   }
-  .post-content p {
+  .profile-post-content p {
     font-size: 2.604vw;
     margin-bottom: 14vw;
     letter-spacing: 0.078vw;
   }
-  .post-image {
+  .profile-post-image {
     margin-bottom: 9.766vw;
   }
-  .info {
+  .profile-info {
     margin: 16.536vw auto;
     padding: 0 2vw;
   }
-  .info-main {
+  .profile-info-main {
     gap: 8vw 0;
   }
-  .info-title {
+  .profile-info-title {
     font-size: 4.688vw;
   }
-  .info-list {
+  .profile-info-list {
     margin-top: 8.073vw;
     gap: 5.208vw;
   }
-  .info-item {
+  .profile-info-item {
     font-size: 2.604vw;
   }
-  .info-image img {
+  .profile-info-image img {
     width: 60vw;
   }
 }
 @media (max-width: 480px) {
-  .post-content h3 {
+  .profile-post-content h3 {
     font-size: 5vw;
   }
-  .post-content p {
+  .profile-post-content p {
     font-size: 3.5vw;
   }
-  .info-title {
+  .profile-info-title {
     font-size: 5vw;
   }
-  .info-item {
+  .profile-info-item {
     font-size: 3.5vw;
   }
 }
