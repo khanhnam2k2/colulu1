@@ -53,4 +53,39 @@ jQuery(function ($) {
     };
     console.log(formData);
   });
+
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = $(".productTab-content");
+    console.log(tabcontent);
+
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = $(".tab-links");
+    console.log(tablinks.length);
+
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+
+    $(cityName).fadeIn("slow");
+    evt.currentTarget.className += " active";
+  }
+  $("#tabMerchandise").click(function (e) {
+    openCity(e, "#Merchandise");
+  });
+  $("#tabReview").click(function (e) {
+    openCity(e, "#Review");
+  });
+  $("#tabDetail").click(function (e) {
+    openCity(e, "#Detail");
+  });
 });
