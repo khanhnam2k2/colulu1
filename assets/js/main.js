@@ -55,34 +55,21 @@ jQuery(function ($) {
   });
 
   // Product Details JS
-  // open tab
-  function openTab(evt, tabName) {
-    let tabcontent = $(".productDetailsTab-content");
-    let tablinks = $(".tab-links");
-
-    tabcontent.hide();
-    tablinks.removeClass(" active");
-    $(tabName).fadeIn("slow");
-    evt.currentTarget.className += " active";
-  }
-
-  //  open tab Merchandise
-  $("#tabMerchandise").click(function (e) {
-    openTab(e, "#Merchandise");
-  });
-
-  //  open tab Review
-  $("#tabReview").click(function (e) {
-    openTab(e, "#Review");
-  });
-
-  //  open tab Detail
-  $("#tabDetail").click(function (e) {
-    openTab(e, "#Detail");
+  // ISwitch tab
+  $(".tab-links").click(function (e) {
+    e.preventDefault();
+    const tabName = $(this).data("target");
+    $("#tab" + tabName)
+      .addClass(" active")
+      .siblings()
+      .removeClass(" active");
+    $(".productDetailsTab-content").hide();
+    $("#" + tabName).fadeIn("slow");
   });
 
   // open/hide content in tab
   $(".productDetailsTab-toggle-content").click(function (e) {
+    e.preventDefault();
     const target = $(this).data("target");
     $("#" + target).slideToggle("400");
     $(this).toggleClass("plus");
