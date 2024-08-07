@@ -54,38 +54,59 @@ jQuery(function ($) {
     console.log(formData);
   });
 
-  function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+  // Product Details JS
+  // open tab
+  function openTab(evt, tabName) {
+    let i, tabcontent, tablinks;
 
-    // Get all elements with class="tabcontent" and hide them
     tabcontent = $(".productTab-content");
-    console.log(tabcontent);
 
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
 
-    // Get all elements with class="tablinks" and remove the class "active"
     tablinks = $(".tab-links");
-    console.log(tablinks.length);
 
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
-
-    $(cityName).fadeIn("slow");
+    $(tabName).fadeIn("slow");
     evt.currentTarget.className += " active";
   }
+
+  //  open tab Merchandise
   $("#tabMerchandise").click(function (e) {
-    openCity(e, "#Merchandise");
+    openTab(e, "#Merchandise");
   });
+
+  //  open tab Review
   $("#tabReview").click(function (e) {
-    openCity(e, "#Review");
+    openTab(e, "#Review");
   });
+
+  //  open tab Detail
   $("#tabDetail").click(function (e) {
-    openCity(e, "#Detail");
+    openTab(e, "#Detail");
+  });
+
+  // open/hide content in tab
+  $(".productTab-toggle-content").click(function (e) {
+    const target = $(this).data("target");
+    $("#" + target).slideToggle("400");
+    $(this).toggleClass("plus");
+  });
+
+  // submit form add cart
+  $(".add-cart-form").on("submit", function (e) {
+    e.preventDefault();
+
+    let formData = {
+      color: $('input[name="color"]:checked').val(),
+      type: $("#type").val(),
+      quantity: $("#quantity").val(),
+      wrapping: $('input[name="wrapping"]:checked').val(),
+    };
+    console.log(formData);
   });
 });
