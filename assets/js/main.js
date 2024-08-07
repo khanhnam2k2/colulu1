@@ -57,20 +57,11 @@ jQuery(function ($) {
   // Product Details JS
   // open tab
   function openTab(evt, tabName) {
-    let i, tabcontent, tablinks;
+    let tabcontent = $(".productTab-content");
+    let tablinks = $(".tab-links");
 
-    tabcontent = $(".productTab-content");
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    tablinks = $(".tab-links");
-
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
+    tabcontent.hide();
+    tablinks.removeClass(" active");
     $(tabName).fadeIn("slow");
     evt.currentTarget.className += " active";
   }
