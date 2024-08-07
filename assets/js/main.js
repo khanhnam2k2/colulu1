@@ -57,7 +57,7 @@ jQuery(function ($) {
   // Product Details JS
   // open tab
   function openTab(evt, tabName) {
-    let tabcontent = $(".productTab-content");
+    let tabcontent = $(".productDetailsTab-content");
     let tablinks = $(".tab-links");
 
     tabcontent.hide();
@@ -82,7 +82,7 @@ jQuery(function ($) {
   });
 
   // open/hide content in tab
-  $(".productTab-toggle-content").click(function (e) {
+  $(".productDetailsTab-toggle-content").click(function (e) {
     const target = $(this).data("target");
     $("#" + target).slideToggle("400");
     $(this).toggleClass("plus");
