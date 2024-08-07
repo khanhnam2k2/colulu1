@@ -2123,6 +2123,7 @@ input[type=radio] {
   max-width: 600px;
   margin-left: 20px;
   width: 100%;
+  cursor: pointer;
 }
 .productDetails-slider-thumbnail .slick-list {
   width: 473px;
