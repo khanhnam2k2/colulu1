@@ -2125,6 +2125,11 @@ input[type=radio] {
   width: 100%;
   cursor: pointer;
 }
+.productDetails-slider-thumbnail .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .productDetails-slider-thumbnail .slick-list {
   width: 473px;
 }
@@ -2132,7 +2137,6 @@ input[type=radio] {
   width: 124px !important;
   height: 124px !important;
   padding: 10px;
-  margin-right: 10px;
 }
 .productDetails-slider-thumbnail .slick-slide img {
   width: 100px !important;
@@ -2403,6 +2407,10 @@ input[type=radio] {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.productDetailsTab-header:hover {
+  opacity: 0.75;
 }
 .productDetailsTab-header h4 {
   font-size: 20px;
@@ -2539,17 +2547,6 @@ input[type=radio] {
 .productDetailsTab-faq-heading {
   font-size: 24px;
   font-weight: 500;
-}
-.productDetailsTab-faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.productDetailsTab-faq-question h4 {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
 }
 .productDetailsTab-faq-answer p {
   font-family: "Inter", sans-serif;
@@ -2883,9 +2880,6 @@ input[type=radio] {
   }
   .productDetailsTab-exchange-main p {
     margin-bottom: 0.651vw;
-  }
-  .productDetailsTab-faq-heading {
-    font-size: 3.125vw;
   }
   .productDetailsTab-faq-question {
     margin-bottom: 3.906vw;

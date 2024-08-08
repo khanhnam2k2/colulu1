@@ -68,11 +68,12 @@ jQuery(function ($) {
   });
 
   // open/hide content in tab
-  $(".productDetailsTab-toggle-content").click(function (e) {
+  $(".productDetailsTab-header").click(function (e) {
     e.preventDefault();
     const target = $(this).data("target");
+
     $("#" + target).slideToggle("400");
-    $(this).toggleClass("plus");
+    $(this).children(".productDetailsTab-toggle-content").toggleClass("plus");
   });
 
   // submit form add cart
